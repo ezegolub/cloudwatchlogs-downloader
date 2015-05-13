@@ -69,4 +69,4 @@ for group in groups:
             )
             for line in lines:
                 ts = datetime.datetime.fromtimestamp(int(line['timestamp']/1000))
-                fh.write("%s %s" % (ts.strftime('%Y-%m-%d %H:%M:%S'), line['message'].strip()))
+                fh.write("%s %s\n" % (ts.strftime('%Y-%m-%d %H:%M:%S'), line['message'].strip()))
